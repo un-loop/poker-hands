@@ -4,7 +4,7 @@
   "description": "Poker hand detection",
   "scripts": {
     "start": "node main.js",
-    "debug": "node --nolazy test.js"
+    "debug": "node --nolazy main.js"
   },
   "author": "Michael Armes (michael@un-loop.org)",
   "license": "ISC",

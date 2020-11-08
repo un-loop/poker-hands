@@ -97,7 +97,7 @@ const isSet = (handInfo) => {
 
 const isTwoPair = (handInfo) => {
   return handInfo.frequencies.length === 3 &&
-    handInfo.frequencies[0] === handInfo.frequencies[1]
+    handInfo.frequencies[0].freq === handInfo.frequencies[1].freq
 };
 
 const isPair = (handInfo) => {
@@ -199,7 +199,7 @@ export const getHandString = (hand) => {
     case Set:
       return `Set of ${pluralize(getCardName(0))}`
     case TwoPair:
-      return `Two pair: ${pluralize(getCardName(0))} and ${pluralize(getCardName(0))}`
+      return `Two pair: ${pluralize(getCardName(0))} and ${pluralize(getCardName(1))}`
     case Pair:
       return `Pair of ${pluralize(getCardName(0))}, ${getCardName(1)} kicker`;
     case HighCard:

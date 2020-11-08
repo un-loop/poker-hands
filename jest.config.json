@@ -1,0 +1,6 @@
+{
+  "testPathIgnorePatterns": [
+    "./.aws-sam",
+    "node_modules"
+  ]
+}

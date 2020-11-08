@@ -1,0 +1,16 @@
+{
+  "name": "poker-hands",
+  "version": "1.0.0",
+  "description": "Poker hand detection",
+  "scripts": {
+    "start": "node main.js",
+    "debug": "node --nolazy test.js"
+  },
+  "author": "Michael Armes (michael@un-loop.org)",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.1.0",
+    "pluralize": "^8.0.0"
+  },
+  "type": "module"
+}

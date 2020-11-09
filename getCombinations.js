@@ -14,7 +14,7 @@ export const countCombinations = (choose, from) => {
 
 export const getCombinations = (choose) => (from) => {
   const permutations = new Array(countCombinations(choose, from.length));
-  permutations.current = 0;
+  let current = 0;
   const permutation = [];
   
   const helper = (remaining, i) => {
@@ -28,7 +28,7 @@ export const getCombinations = (choose) => (from) => {
     helper(remaining - 1, i + 1);
 
     if (permutation.length === choose) {
-      permutations[permutations.current++] = [...permutation];
+      permutations[current++] = [...permutation];
     }
 
     permutation.pop();

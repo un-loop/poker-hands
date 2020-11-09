@@ -170,6 +170,11 @@ export const handComparer = (isAscending) => (first, second) => {
 const capitalize = (str) =>str && `${str[0].toUpperCase()}${str.slice(1)}`;
 
 export const getHandString = (hand) => {
+
+  if (!hand) {
+    return 'None';
+  }
+
   const handInfo = getHandInfo(hand);
   const handRank = getHandRank(handInfo);
 
